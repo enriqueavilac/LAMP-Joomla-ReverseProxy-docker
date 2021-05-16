@@ -8,7 +8,7 @@ DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends install nginx \
   php7.4 php7.4-fpm php7.4-intl php7.4-mysqli php7.4-xdebug php7.4-xml php7.4-zip \
   curl ca-certificates -y
 
-# remove `default` symbolic link
+# remove nginx `default` index.html
 rm /usr/share/nginx/html/index.html
 
 # set joomla php.ini recommended settings
