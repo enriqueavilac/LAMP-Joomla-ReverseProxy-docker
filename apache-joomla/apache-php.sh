@@ -6,7 +6,7 @@ apt-get update
 # install necessary packages
 DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends install apache2 \
   php7.4 php7.4-mysqli php7.4-xml php7.4-zip \
-  curl ca-certificates unzip -y
+  curl ca-certificates -y
 
 # remove apache's default index.html file
 rm /var/www/html/index.html
