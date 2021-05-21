@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker LAMP</title>
+    <style>
+        .container {
+            font-family: Arial, Consolas, sans-serif;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .main-img {
+            width: 100%;
+        }
+        
+        .btn-list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+        }
+        
+        .btn {
+            display: block;
+            border: 1px solid rgba(0, 0, 0, .1);
+            border-radius: 4px;
+            outline: 0;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        
+        .btn-db-admin {
+            background-color: #97ca30;
+            color: #fff;
+        }
+        
+        .btn-nginx {
+            background-color: #3080ca;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>LAMP with <em>Docker</em> + <em>Nginx</em> Reverse Proxy</h1>
+        <p>
+            The main source repository for this example is <a href="https://github.com/enriqueavilac/LAMP-Joomla-ReverseProxy-docker" target="_blank">here</a>
+            <br><br> You can easily navigate by the following links:
+        </p>
+        <ul class="btn-list">
+            <li>
+                <a class="btn btn-db-admin" href="/db-admin">Go to PHPMyAdmin</a>
+            </li>
+            <li>
+                <a class="btn btn-nginx" href="/nginx">Go to Nginx + Joomla</a>
+            </li>
+            <li>
+                <a class="btn btn-apache" href="/apache">Go to Apache + Joomla</a>
+            </li>
+        </ul>
+        <h3>Architecture</h3>
+        <img class="main-img" src="https://raw.githubusercontent.com/enriqueavilac/LAMP-Joomla-ReverseProxy-docker/main/joomla-architecture.png">
+    </div>
+</body>
+
+</html>
